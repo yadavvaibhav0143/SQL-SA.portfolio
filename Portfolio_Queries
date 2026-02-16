@@ -1,4 +1,4 @@
-Active_Accounts%
+--Active_Accounts%
 
 SELECT 
     Year,
@@ -8,7 +8,7 @@ GROUP BY Year
 ORDER BY Year;
 
 
-Avg_Balper_Account
+--Avg_Balper_Account
 
 SELECT 
     Year,
@@ -18,7 +18,7 @@ GROUP BY Year
 ORDER BY Year;
 
 
-Churn_Rate%
+--Churn_Rate%
 
 SELECT 
     Year,
@@ -28,7 +28,7 @@ GROUP BY Year
 ORDER BY Year;
 
 
-Cross-Sell_Ratio
+--Cross-Sell_Ratio
 
 SELECT 
     Year,
@@ -38,7 +38,7 @@ GROUP BY Year
 ORDER BY Year;
 
 
-Etb-Ntb_Contribution
+--Etb-Ntb_Contribution
 
 SELECT 
     Year,
@@ -54,7 +54,7 @@ GROUP BY Year, Customer_Type
 ORDER BY Year, Customer_Type;
 
 
-Growth%_YoY
+--Growth%_YoY
 
 WITH Portfolio AS (
     SELECT 
@@ -74,7 +74,7 @@ SELECT
 FROM Portfolio a;
 
 
-Ltv-Cac_Ratio
+--Ltv-Cac_Ratio
 
 SELECT 
     Year,
@@ -91,7 +91,7 @@ GROUP BY Year
 ORDER BY Year;
 
 
-Total_SA_Portfolio
+--Total_SA_Portfolio
 
 WITH Portfolio AS (
     SELECT 
@@ -110,8 +110,8 @@ SELECT
     ) AS Growth_Percent
 FROM Portfolio a;
 
-Summary.SA_Project
 
+--Summary.SA_Project
 
 DROP VIEW IF EXISTS SA_Portfolio_Summary;
 GO
