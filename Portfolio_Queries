@@ -1,0 +1,8 @@
+Active Accounts %
+
+SELECT 
+    Year,
+    ROUND(AVG(CAST(Active_Flag AS decimal(5,2))) * 100, 2) AS Active_Accounts_Percent
+FROM SA_Project1
+GROUP BY Year
+ORDER BY Year;
