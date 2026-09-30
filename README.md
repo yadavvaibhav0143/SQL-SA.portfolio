@@ -6,13 +6,13 @@ This project analyzes a banking customer portfolio dataset using SQL Server to e
 
 ### Business Objectives
 
--Measure overall portfolio performance year-over-year
--Track active customer percentage
--Monitor churn trends
--Evaluate cross-sell effectiveness
--Analyze revenue efficiency using LTV:CAC
--Assess ETB vs NTB portfolio contribution
--Calculate YoY portfolio growth
+- Measure overall portfolio performance year-over-year
+- Track active customer percentage
+- Monitor churn trends
+- Evaluate cross-sell effectiveness
+- Analyze revenue efficiency using LTV:CAC
+- Assess ETB vs NTB portfolio contribution
+- Calculate YoY portfolio growth
 
 ### Dataset Description
 
@@ -23,6 +23,10 @@ The dataset contains customer-level banking information including:
 -Churn Flag
 -Customer Lifetime Years
 -Year-wise portfolio data
+
+### Dataset Scope
+
+The dataset contains annual portfolio snapshots for 2023 and 2024. The analysis compares portfolio-level KPIs across the two years and is not intended for longitudinal tracking of individual customer behavior.
 
 ### Key KPIs Implemented
 
@@ -36,7 +40,7 @@ Measures overall portfolio quality and customer value.
 Tracks customer attrition trend year-over-year.
 
 #### Cross-Sell Ratio
-Average number of additional products held per customer.
+Average Cross-Sell Products per Customer.
 
 #### ETB vs NTB Contribution
 Analyzes balance contribution split between:
@@ -47,4 +51,4 @@ Analyzes balance contribution split between:
 Calculated using window function (LAG) to measure portfolio expansion rate.
 
 #### LTV : CAC Ratio
-Evaluates profitability efficiency of customer acquisition.
+Provides a simplified portfolio-level view of customer acquisition efficiency using average revenue, customer lifetime, and acquisition cost.
